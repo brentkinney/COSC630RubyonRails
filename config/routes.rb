@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'welcome/services'
+  get 'welcome/pricing'
+  get 'welcome/about'
+  get 'welcome/contact'
   get 'welcome/index'
 
   root 'welcome#index'

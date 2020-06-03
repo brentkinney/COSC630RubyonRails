@@ -1,4 +1,13 @@
 class WelcomeController < ApplicationController
-  def index
+  def services
+  end
+
+  def pricing
+  end
+
+  def about
+  end
+
+  def contact
   end
 end
