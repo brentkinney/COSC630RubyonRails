@@ -1,3 +1,23 @@
+<html>
+<head>
+<style>
+*  {
+    box-sizing:border-box;
+}
+body {background-color: lightgrey;}
+.column{
+    float:left;
+    width:50%;
+    padding:10px;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+</style>
+</head>
+<body>
 <h1>Services</h1>
 <p>
 <%= link_to  "Home", welcome_index_path %>
@@ -6,4 +26,28 @@
 <%= link_to  "About", welcome_about_path %>
 <%= link_to  "Contact", welcome_contact_path %>
 </p>
-<p>This page is under construction - Check back later</p>
+<div class="row">
+    <div class="column">
+        <h2>Exterior Mods<h2>
+        <h3>Lift Kits</h3>
+        <p>Image coming soon </p>
+        <h3>Bumper and Winches</h3>
+        <p>Image coming soon </p>
+        <h3>Rock Rails</h3>
+        <p>Image coming soon</p>
+        <h3>Skid Plates and Armor</h3>
+        <p>Image coming soon </p>
+    </div>
+    <div class="column">
+        <h2>Interior Mods<h2>
+        <h3>CB Radios</h3>    
+        <p>Image coming soon </p>
+        <h3>Security and Storage</h3>
+        <p>Image coming soon </p>
+        <h3>Seat Covers</h3>
+        <p>Image coming soon </p>
+    </div>
+</div>
+
+</body>
+</html>
